@@ -3,9 +3,11 @@ kind: Service
 metadata:
   name: preschool-svc
 spec:
-  selector:
-    type: LoadBalancer
+  type: LoadBalancer
+  selector:    
     app: preschool
   ports:
   - port: 80
-    targetPort: 80         
+    targetPort: 80  
+
+    
