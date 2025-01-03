@@ -4,6 +4,7 @@ metadata:
   name: preschool-svc
 spec:
   selector:
+    type: LoadBalancer
     app: preschool
   ports:
   - port: 80
